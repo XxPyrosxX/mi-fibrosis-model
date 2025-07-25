@@ -55,12 +55,29 @@ These methods are complementary and together provide a full diagnostic of model 
 ## 📁 Project Structure
 
 fibrosis-abm-control/
-├── data/ # Input data and simulation results
-├── model/ # ODE + ABM Python implementation
-├── analysis/ # Random forest, SHAP, Sobol, and MC scripts
-├── notebooks/ # Jupyter notebooks for interactive use
-├── results/ # Figures and plots
-├── requirements.txt # Python dependencies
-└── README.md # Project overview
-
-
+├── data/                    
+│   ├── inputs/              # Input cytokine parameters for simulations
+│   └── outputs/             # Simulation results and intermediate data
+│
+├── model/                   
+│   ├── run_simulation.py    # Executes the ABM-ODE simulation pipeline
+│   ├── abm_module.py        # Agent-based model logic
+│   └── ode_module.py        # ODE signaling network implementation
+│
+├── analysis/                
+│   ├── random_forest.py     # Trains and evaluates the Random Forest Regressor
+│   ├── sobol_analysis.py    # Computes Sobol sensitivity indices using SALib
+│   ├── shap_explainer.py    # Visualizes feature importance using SHAP
+│   └── monte_carlo.py       # Runs Monte Carlo sampling for uncertainty analysis
+│
+├── notebooks/               
+│   ├── exploratory_analysis.ipynb   # Data visualization and inspection
+│   ├── shap_visuals.ipynb          # Interactive SHAP plots and force plots
+│   └── monte_carlo_results.ipynb   # Output summaries from MC simulations
+│
+├── results/                 
+│   ├── figures/             # Plots and visualizations of analysis results
+│   └── summaries/           # CSV/JSON reports, ranked feature lists, etc.
+│
+├── requirements.txt         # All required Python packages and dependencies
+└── README.md                # Overview, usage, and documentation (this file)
