@@ -71,13 +71,4 @@ fibrosis-abm-control/
 │   └── monte_carlo.py       # Runs Monte Carlo sampling for uncertainty analysis
 │
 ├── notebooks/               
-│   ├── exploratory_analysis.ipynb   # Data visualization and inspection
-│   ├── shap_visuals.ipynb          # Interactive SHAP plots and force plots
-│   └── monte_carlo_results.ipynb   # Output summaries from MC simulations
-│
-├── results/                 
-│   ├── figures/             # Plots and visualizations of analysis results
-│   └── summaries/           # CSV/JSON reports, ranked feature lists, etc.
-│
-├── requirements.txt         # All required Python packages and dependencies
-└── README.md                # Overview, usage, and documentation (this file)
+│   ├── exploratory_a
