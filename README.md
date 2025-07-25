@@ -51,24 +51,3 @@ Original MATLAB models were ported to **Python** to take advantage of open-sourc
 These methods are complementary and together provide a full diagnostic of model behavior.
 
 ---
-
-## 📁 Project Structure
-
-fibrosis-abm-control/
-├── data/                    
-│   ├── inputs/              # Input cytokine parameters for simulations
-│   └── outputs/             # Simulation results and intermediate data
-│
-├── model/                   
-│   ├── run_simulation.py    # Executes the ABM-ODE simulation pipeline
-│   ├── abm_module.py        # Agent-based model logic
-│   └── ode_module.py        # ODE signaling network implementation
-│
-├── analysis/                
-│   ├── random_forest.py     # Trains and evaluates the Random Forest Regressor
-│   ├── sobol_analysis.py    # Computes Sobol sensitivity indices using SALib
-│   ├── shap_explainer.py    # Visualizes feature importance using SHAP
-│   └── monte_carlo.py       # Runs Monte Carlo sampling for uncertainty analysis
-│
-├── notebooks/               
-│   ├── exploratory_a
